@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Pokemon Detection
 //
-//  Created by Saksham Sharma on 02/08/20.
+//  Created by Saksham Sharma on 09/01/21.
 //  Copyright © 2020 sharma. All rights reserved.
 //
 
@@ -22,6 +22,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
+        sceneView.autoenablesDefaultLighting = true
         
     }
     

@@ -13,6 +13,11 @@
 		407B4CD824D5FA1F001B36CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407B4CD624D5FA1F001B36CE /* Main.storyboard */; };
 		407B4CDA24D5FA21001B36CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407B4CD924D5FA21001B36CE /* Assets.xcassets */; };
 		407B4CDD24D5FA21001B36CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407B4CDB24D5FA21001B36CE /* LaunchScreen.storyboard */; };
+		40B1CDBA25A90416002FE669 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B1CDB925A90416002FE669 /* Constants.swift */; };
+		40BC61A125A934C600C9602E /* FaceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BC61A025A934C600C9602E /* FaceNode.swift */; };
+		40BC61A525A9399C00C9602E /* FaceTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BC61A425A9399C00C9602E /* FaceTrackViewController.swift */; };
+		40BC61A825A9464B00C9602E /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BC61A725A9464A00C9602E /* SampleViewController.swift */; };
+		40F3004D25A8FB5100F9DC41 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F3004C25A8FB5100F9DC41 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		407B4CD924D5FA21001B36CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		407B4CDC24D5FA21001B36CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		407B4CDE24D5FA21001B36CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B1CDB925A90416002FE669 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40BC61A025A934C600C9602E /* FaceNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceNode.swift; sourceTree = "<group>"; };
+		40BC61A425A9399C00C9602E /* FaceTrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTrackViewController.swift; sourceTree = "<group>"; };
+		40BC61A725A9464A00C9602E /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		40F3004C25A8FB5100F9DC41 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +67,43 @@
 			isa = PBXGroup;
 			children = (
 				407B4CD024D5FA1F001B36CE /* AppDelegate.swift */,
-				407B4CD224D5FA1F001B36CE /* art.scnassets */,
-				407B4CD424D5FA1F001B36CE /* ViewController.swift */,
-				407B4CD624D5FA1F001B36CE /* Main.storyboard */,
+				40B1CDBC25A90421002FE669 /* Model */,
+				40F3004A25A8F85500F9DC41 /* View */,
+				40F3004825A8F84600F9DC41 /* Controller */,
 				407B4CD924D5FA21001B36CE /* Assets.xcassets */,
-				407B4CDB24D5FA21001B36CE /* LaunchScreen.storyboard */,
+				407B4CD224D5FA1F001B36CE /* art.scnassets */,
 				407B4CDE24D5FA21001B36CE /* Info.plist */,
 			);
 			path = "Pokemon Detection";
+			sourceTree = "<group>";
+		};
+		40B1CDBC25A90421002FE669 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40B1CDB925A90416002FE669 /* Constants.swift */,
+				40BC61A025A934C600C9602E /* FaceNode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40F3004825A8F84600F9DC41 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40F3004C25A8FB5100F9DC41 /* HomeViewController.swift */,
+				407B4CD424D5FA1F001B36CE /* ViewController.swift */,
+				40BC61A425A9399C00C9602E /* FaceTrackViewController.swift */,
+				40BC61A725A9464A00C9602E /* SampleViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		40F3004A25A8F85500F9DC41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				407B4CDB24D5FA21001B36CE /* LaunchScreen.storyboard */,
+				407B4CD624D5FA1F001B36CE /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,7 +133,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = sharma;
 				TargetAttributes = {
 					407B4CCC24D5FA1F001B36CE = {
@@ -141,6 +180,11 @@
 			files = (
 				407B4CD524D5FA1F001B36CE /* ViewController.swift in Sources */,
 				407B4CD124D5FA1F001B36CE /* AppDelegate.swift in Sources */,
+				40F3004D25A8FB5100F9DC41 /* HomeViewController.swift in Sources */,
+				40BC61A125A934C600C9602E /* FaceNode.swift in Sources */,
+				40B1CDBA25A90416002FE669 /* Constants.swift in Sources */,
+				40BC61A525A9399C00C9602E /* FaceTrackViewController.swift in Sources */,
+				40BC61A825A9464B00C9602E /* SampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +236,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +297,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -287,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8T33N4X96X;
 				INFOPLIST_FILE = "Pokemon Detection/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8T33N4X96X;
 				INFOPLIST_FILE = "Pokemon Detection/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
